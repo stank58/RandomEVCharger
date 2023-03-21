@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>EV Chargers</title>
+    <script>
+      function getRandomImage() {
+        // Define an array of hair images
+        var hairImages = [
+          "https://pdg.cef.co.uk/images/pdg/schneider_evb1a22p4ri-a/384x384/schneider_evb1a22p4ri-a.jpg",
+          "https://pdg.cef.co.uk/images/pdg/wallbox_plp2-0-2-2-f-002-a/384x384/wallbox_plp2-0-2-2-f-002-a.jpg",
+          "https://pdg.cef.co.uk/images/pdg/easee_10500-a/384x384/easee_10500-a.jpg",
+          "https://image.ceneostatic.pl/data/products/129467719/i-vestel-evc04-ac11sw-t2p-ev-iec-62196-type-2-11-kw.jpg",
+		  "https://evbug.co.uk/media/catalog/product/cache/f3abd7fee4c6edee3217c8dfb6e38d5e/h/y/hypervolt.jpg",
+		  "https://www.channelfutures.com/files/2022/04/Teltonika-Charger.jpg",
+          "https://pdg.cef.co.uk/images/pdg/myenergi_zappi-2h07uw-a/384x384/myenergi_zappi-2h07uw-a.jpg",
+          "https://pdg.cef.co.uk/images/pdg/rolec_rolec4020g-a/384x384/rolec_rolec4020g-a.jpg",
+          "https://pdg.cef.co.uk/images/pdg/wallbox_plp2-0-2-2-f-001-a/384x384/wallbox_plp2-0-2-2-f-001-a.jpg",
+          "https://pdg.cef.co.uk/images/pdg/ics_icsw22b-a/384x384/ics_icsw22b-a.jpg",
+          "https://d34ke54igpy2jx.cloudfront.net/static_production/chargers/Tesla_Wall_Connector_electric_car_charger.webp",
+        ];
+
+        // Generate a random number within the array length
+        var randomIndex = Math.floor(Math.random() * hairImages.length);
+
+        // Get the image element by ID and set its source to the randomly selected image
+        var img = document.getElementById("hairImage");
+        img.src = hairImages[randomIndex];
+      }
+    </script>
+  </head>
+  <body>
+    <button onclick="getRandomImage()">Get Random Charger</button>
+    <br>
+    <img id="hairImage120"
+    6 src="" alt="Random Charger">
+  </body>
+</html>
